@@ -8,4 +8,5 @@ var moment = require("moment");
 var fs = require("fs");
 var axios = require("axios");
 
-var spotify = new Spotify(keys.spotify);
+// var spotify = new Spotify(keys.spotify);
+// console.log(keys.spotify)
