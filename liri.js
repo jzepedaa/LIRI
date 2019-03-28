@@ -24,7 +24,7 @@ function inquiry() {
         },
         {
             type: "input",
-            message: "Enter the artist, song, or movie",
+            message: "Type the Artist, Song, or Movie",
             name: "info"
         }
 
