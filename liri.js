@@ -25,11 +25,11 @@ function inquiry() {
         {
             type: "input",
             message: "Type the Artist, Song, or Movie: ",
-            name: "info"
+            name: "text"
         }
 
     ]).then(function (inquirerResponse) {
-        App(inquirerResponse.command, inquirerResponse.info);
+        App(inquirerResponse.command, inquirerResponse.text);
     })
 
 }
@@ -97,28 +97,28 @@ function getMovie(movie) {
 
 
 //main function with users input
-function App(command, info) {
+function App(command, text) {
     switch (command) {
         case "concert-this":
-            if (info === "") {
+            if (text === "") {
 
                 bandName("Eminem")
             } else {
-                bandName(info);
+                bandName(text);
             }
             break;
         case "spotify-this-song":
-            if (info === "") {
+            if (text === "") {
                 readSpotify("Stan");
             } else {
-                readSpotify(info);
+                readSpotify(text);
             }
             break;
         case "movie-this":
-            if (info === "") {
+            if (text === "") {
                 getMovie("Spider Man");
             } else {
-                getMovie(info);
+                getMovie(text);
             }
             break;
         case "do-what-it-says":
