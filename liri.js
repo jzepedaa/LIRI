@@ -101,7 +101,7 @@ function App(command, info) {
     switch (command) {
         case "concert-this":
             if (info === "") {
-                console.log("Default: ")
+
                 bandName("Eminem")
             } else {
                 bandName(info);
