@@ -18,14 +18,14 @@ var params;
 function inquiry() {
     inquirer.prompt([
         {
-            type: "input",
-            message: "Type your command `do-what-it-says`, `movie-this`, `spotify-this-song`, `concert-this`: ",
-            name: "command"
+            type: "list",
+            name: "command",
+            message: "Type your command `do-what-it-says`, `movie-this`, `spotify-this-song`, `concert-this`: "
         },
         {
             type: "input",
-            message: "Type the Artist, Song, or Movie",
-            name: "info"
+            name: "info",
+            message: "Type the Artist, Song, or Movie: "
         }
 
     ]).then(function (inquirerResponse) {
