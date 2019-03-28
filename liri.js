@@ -141,5 +141,5 @@ function App(command, info) {
     }
 
 }
-
-setTimeout(inquiry);
+//call to start inquiry
+inquiry();
